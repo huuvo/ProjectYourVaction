@@ -9,103 +9,1434 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+  <div  id="menu-responsive" class="menu-responsive hidden-lg" style="left: 0px;">
+    <div  onclick=toglemenu() class="menu-close">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="menu-primary">
+      <ul id="accordion" class="accordion">
+        <li>
+          <a href="#" class="menu-link main-menu-link">Trang Chủ</a>
+        </li>
+        <li class="dcjq-parent-li">
+          <a href="#" class="menu-link main-menu-link dcjq-parent" onclick="displayisnoe('displayisblock')" >TOUR ĐÀ NẴNG<span
+              class="dcjq-icon"></span>
+          </a>
+          <ul id="displayisblock"  on class="sub-menu menu-odd menu-depth-1 displayisnoe">  
+            <li>
+              <a href="#" class="menu-link sub-menu-link">Tour Đà Lạt Đà Nẵng</a>
+            </li>
+            <li><a href="#" class="menu-link sub-menu-link">Tour Nha Trang Đà
+                Nẵng</a>
+            </li>
+            <li><a href="#" class="menu-link sub-menu-link">Tour Sài Gòn Đà
+                Nẵng</a>
+            </li>
+            <li><a href="#" class="menu-link sub-menu-link">Tour Cần Thơ Đà
+                Nẵng</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dcjq-parent-li">
+            <a href="#" class="menu-link main-menu-link dcjq-parent" onclick="displayisnoe('displayisblock1')" >TOUR LOẠI HÌNH<span
+                class="dcjq-icon"></span>
+            </a>
+            <ul id="displayisblock1" class="sub-menu menu-odd menu-depth-1 displayisnoe">  
+              <li>
+                <a href="#" class="menu-link sub-menu-link">Tour Đà Lạt Đà Nẵng</a>
+              </li>
+              <li><a href="#" class="menu-link sub-menu-link">Tour Nha Trang Đà
+                  Nẵng</a>
+              </li>
+              <li><a href="#" class="menu-link sub-menu-link">Tour Sài Gòn Đà
+                  Nẵng</a>
+              </li>
+              <li><a href="#" class="menu-link sub-menu-link">Tour Cần Thơ Đà
+                  Nẵng</a>
+              </li>
+            </ul>
+        </li>
+      <li class="dcjq-parent-li">
+          <a href="#" class="menu-link main-menu-link dcjq-parent" onclick="displayisnoe('displayisblock3')" >KHÁCH HÀNG
+            <spa class="dcjq-icon"></span></a>
+        <ul id="displayisblock3" class="sub-menu menu-odd menu-depth-1" style="display: none;">
+          <li><a href="#" class="menu-link sub-menu-link">Thông tin khách hàng</a>
+          </li>
+          <li><a href="#" class="menu-link sub-menu-link">Ý kiến khách hàng</a></li>
+        </ul>
+      </li>
+      <li class="dcjq-parent-li">
+        <a onclick="displayisnoe('displayisblock4')" href="#" class="menu-link main-menu-link dcjq-parent">TIN
+          TỨC<span class="dcjq-icon"></span></a>
+        <ul  id="displayisblock4" class="sub-menu menu-odd menu-depth-1" style="display: none;">
+          <li><a href="#" class="menu-link sub-menu-link">Sổ tay du lịch</a></li>
+          <li><a href="#" class="menu-link sub-menu-link">Khuyến mãi</a></li>
+          <li><a href="#" class="menu-link sub-menu-link">Café 8</a></li>
+          <li><a href="#" class="menu-link sub-menu-link">Kinh nghiệm du lịch</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dcjq-parent-li">
+          <a onclick="displayisnoe('displayisblock5')" href="#" class="menu-link main-menu-link dcjq-parent">DỊCH
+          VỤ<span class="dcjq-icon"></span></a>
+        <ul id="displayisblock5"  class="sub-menu menu-odd menu-depth-1" style="display: none;">
+          <li class="dcjq-parent-li"><a href="#"
+              class="menu-link sub-menu-link dcjq-parent">Thuê xe<span class="dcjq-icon"></span></a>
+            <ul class="sub-menu menu-odd menu-depth-1" style="display: none;">
+              <li><a href="#" class="menu-link sub-menu-link">Cho Thuê Ôtô</a></li>
+              <li><a href="#" class="menu-link sub-menu-link">Cho Thuê Xe Máy</a></li>
+              <li><a href="#" class="menu-link sub-menu-link">Cho Thuê Xe Đạp</a></li>
+              <li><a href="#" class="menu-link sub-menu-link">Các Loại Hình Khác</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="menu-link sub-menu-link">Phòng vé máy bay -
+              D2Air</a>
+            </li>
+          <li>
+            <a href="#" class="menu-link sub-menu-link">Đặt phòng khách
+              sạn – D2Booking</a>
+            </li>
+          <li><a href="#" class="menu-link sub-menu-link">Tổ chức sự kiện</a></li>
+        </ul>
+      </li>
+      <li class="dcjq-parent-li"><a href="#"
+          class="menu-link main-menu-link dcjq-parent">Giới Thiệu<span class="dcjq-icon"></span></a>
+        <ul class="sub-menu menu-odd menu-depth-1" style="display: none;">
+          <li>
+            <a href="#" class="menu-link sub-menu-link">Vì sao chọn chúngtôi?</a>
+          </li>
+          <li><a href="#" class="menu-link sub-menu-link">Quy định &amp; Chính
+              sách</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#" class="menu-link main-menu-link">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </div>
+
   <header class="auto-hide-header hidden-print" role="banner">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-12">
-          <nav class="top-nav container-custom">
+          <nav class="top-nav">
             <a href="/" class="logo">
               <img src="images/logo.png" alt="datviettour">
             </a>
             <div class="filter-bar">
               <div class="filter-nav">
-                <a class="header-text login" data-toggle="modal" data-target="#accessModal" onclick="active_login()">
-                  <i class="fa fa-user"></i>
-                  Đăng nhập
-                </a>
               </div>
               <div class="filter-nav-under">
                 <form method="POST" action="#" accept-charset="UTF-8" class="search-form dropdown"><input name="_token"
                     type="hidden" value="WLHXU9GN40pUsWGk3onShTqk6zf2IY4dRHKGmFK9">
                   <input name="key" type="text" placeholder="Bạn muốn tìm" autocomplete="off">
-                  <a href="javascript:void(0)"><i class="fa fa-search"></i>
+                  <a href="#"><i class="fa fa-search"></i>
                   </a>
                 </form>
               </div>
             </div>
           </nav>
-          <nav class="navbar navbar-default">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-left">
-                  <li><a href="#myPage">Trang Chủ</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TOUR TRONG NƯỚC
-                      <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Merchandise</a></li>
-                      <li><a href="#">Extras</a></li>
-                      <li><a href="#">Media</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TOUR NƯỚC NGOÀI
-                      <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Merchandise</a></li>
-                      <li><a href="#">Extras</a></li>
-                      <li><a href="#">Media</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dịch vụ
-                      <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Merchandise</a></li>
-                      <li><a href="#">Extras</a></li>
-                      <li><a href="#">Media</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Giới Thiệu
-                      <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Merchandise</a></li>
-                      <li><a href="#">Extras</a></li>
-                      <li><a href="#">Media</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Trang Chủ
-                      <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Merchandise</a></li>
-                      <li><a href="#">Extras</a></li>
-                      <li><a href="#">Media</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#myPage">Giới Thiệu</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+
         </div>
 
       </div>
     </div>
   </header>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="header-container">
+        <div class="col-xs-12 col-sm-3 col-md-3">
+        </div>
+        <div class="menu-icon hidden-lg hidden-md">
+          <div  onclick=toglemenu2() class="menu-open">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12">
+        <nav class="nav">
+          <div class="visible-lg visible-md">
+            <div class="menu-primary">
+              <ul>
+                <li class="menu-item-even menu-item-depth-0" itemprop="name"><a itemprop="url" href="#"
+                    class="menu-link main-menu-link">Trang Chủ</a>
+                </li>
+                <li class="main-menu-item  menu-item-even menu-item-depth-0" id='dropdown1' itemprop="name">
+                  <a itemprop="url" href="#" class="menu-link main-menu-link">
+                    TOUR ĐÀ NẴNG
+                  </a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" itemscope="" itemtype="#" id='dropdownul1'>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Tour Hà Nội Đà Nẵng</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu-item  menu-item-even menu-item-depth-0" itemprop="name" id='dropdown1'>
+                  <a itemprop="url" href="#" class="menu-link main-menu-link">DAILY TOUR</a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" id='dropdownul1' itemscope="" itemtype="#">
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name">
+                      <a itemprop="url" href="#" class="sub-menu-link">
+                        <i class="fa fa-plane fa-fw"></i>TourHuế</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu-item  menu-item-even menu-item-depth-0" itemprop="name" id='dropdown1'>
+                  <a itemprop="url" href="#" class="menu-link main-menu-link">KHÁCH HÀNG</a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" id='dropdownul1' itemscope=""
+                    itemtype="#">
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i
+                          class="fa fa-plane fa-fw"></i>Thông tin khách hàng</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i
+                          class="fa fa-plane fa-fw"></i>Ý kiến khách hàng</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu-item  menu-item-even menu-item-depth-0" id='dropdown1' itemprop="name">
+                  <a itemprop="url" href="#" class="menu-link main-menu-link">TIN TỨC</a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" id='dropdownul1' itemscope="" itemtype="#">
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Sổ tay du lịch</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Khuyến mãi</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Café
+                        8</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Kinh nghiệm du lịch</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu-item  menu-item-even menu-item-depth-0" id='dropdown1' itemprop="name">
+                  <a itemprop="url" href="#" class="menu-link main-menu-link">DỊCH VỤ</a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" id='dropdownul1' itemscope="" itemtype="#">
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Thuê
+                        xe</a>
+                      <ul class="sub-menu menu-odd  menu-depth-1" itemscope="" itemtype="#">
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Cho Thuê Ôtô</a></li>
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Cho Thuê Xe Máy</a></li>
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Cho Thuê Xe Đạp</a></li>
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Các Loại Hình Khác</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Phòng vé máy bay - D2Air</a>
+                    </li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Đặt phòng khách sạn –
+                        D2Booking</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Tổ chức sự kiện</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-even menu-item-depth-0" id='dropdown1' itemprop="name"><a itemprop="url"
+                    href="#" class="menu-link main-menu-link">Giới Thiệu</a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" id='dropdownul1' itemscope=""
+                    itemtype="#">
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i
+                          class="fa fa-plane fa-fw"></i>Vì sao chọn chúng tôi?</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i
+                          class="fa fa-plane fa-fw"></i>Quy định &amp; Chính sách</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu-item  menu-item-even menu-item-depth-0" id='dropdown1' itemprop="name">
+                  <a itemprop="url" href="#" class="menu-link main-menu-link">DỊCH VỤ</a>
+                  <ul class="sub-menu menu-odd  menu-depth-1" id='dropdownul1' itemscope="" itemtype="#">
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Thuê
+                        xe</a>
+                      <ul class="sub-menu menu-odd  menu-depth-1" itemscope="" itemtype="#">
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Cho Thuê Ôtô</a></li>
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Cho Thuê Xe Máy</a></li>
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Cho Thuê Xe Đạp</a></li>
+                        <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                            href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Các Loại Hình Khác</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Phòng vé máy bay - D2Air</a>
+                    </li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Đặt phòng khách sạn –
+                        D2Booking</a></li>
+                    <li class="sub-menu-item  menu-item-odd menu-item-depth-1" itemprop="name"><a itemprop="url"
+                        href="#" class="sub-menu-link"><i class="fa fa-plane fa-fw"></i>Tổ chức sự kiện</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-even menu-item-depth-0" itemprop="name"><a itemprop="url"
+                    href="#" class="menu-link main-menu-link">Liên Hệ</a>
+                </li>
+                <li class="menu-item-even menu-item-depth-0" itemprop="name"><a itemprop="url"
+                    href="#" class="menu-link main-menu-link">Liên Hệ</a>
+                </li>
+                <li class="menu-item-even menu-item-depth-0" itemprop="name"><a itemprop="url"
+                    href="#" class="menu-link main-menu-link">Liên Hệ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/VỊNH HA LONG 2.png" alt="#" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="images/VỊNH HA LONG 2.png" alt="#" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="images/VỊNH HA LONG 2.png" alt="#" style="width:100%;">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="search-tour-section search-browser-web" id="sessionSearchWebTour">
+    <div class="container">
+      <div class="row">
+        <!-- Search Form -->
+        <form id="searchFormKiritmWebTour" method="get" role="form" action="/tim-kiem-tour">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-sm-4 col-xs-12">
+                <div class="searchFilterQuery search-box-web-tour">
+                  <input type="text" class="form-control" name="search"
+                    id="inputSearchWebTour" autocomplete="off" placeholder="Tìm tour : ..." value="">
+                  <div class="input-group-addon">
+                    <span class="fa fa-search"></span>
+                  </div>
+                  <div id="showSuggestionWebTour" class="suggestions hidden-cls">
+                    <ul id="suggestionSearchWebTour" class="ul-suggestion">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-4 col-xs-12">
+                    <div id="fromDateSearchBoxWebTour" class="input-group date ed-datepicker filterDate">
+                      <input type="text" class="form-control" name="from" placeholder="Từ ngày" autocomplete="off"
+                        value="">
+                      <div class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    <div id="toDateSearchBoxWebTour" class="input-group date ed-datepicker filterDate">
+                      <input type="text" class="form-control" name="to" autocomplete="off" placeholder="Đến ngày"
+                        value="">
+                      <div class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="form-group tour-type">
+                      <div class="bookingDrop">
+                        <select id="group" class="group" name="group">
+                          <!-- <option value="0"></option> -->
+                          <option value="1">Chọn loại tour</option>
+                          <option value="2">Tour trong nước</option>
+                          <option value="3">Tour nước ngoài</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2 col-xs-12">
+                <button type="submit" class="btn btn-block buttonCustomPrimary">
+                  Tìm kiếm
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h2 class="title">
+            <a href="#"><span> TOUR <b>NỔI BẬT </b></span></a>
+          </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="#x"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="#"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </di>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h2 class="title">
+            <a href="#"><span> TOUR <b>TRONG NƯỚC </b></span></a>
+          </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </di>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h2 class="title">
+            <a href="#"><span> TOUR <b> NƯỚC NGOÀI</b></span></a>
+          </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/tourNDSGN380-067-020419VJ-D-O/hue-la-vang-dong-phong-nha-thien-duong-ba-na-hoi-an-da-nang-khach-san-4sao-5sao-tron-tour-tour-tieu-chuan.aspx"
+                class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/danang.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+                <div class="div-info">
+                  <div class="f-left"><span>02/04/2019 06:00 | 5 ngày</span></div>
+                  <div class="f-right"><span>1 chỗ</span></div>
+                  <div class="clear"></div>
+                </div>
+                <div class="div-info">
+                  <div class="giacu f-left">7,590,000 đ</div>
+                  <div class="giamoi f-left">6,790,000 đ</div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h2 class="title">
+            <a href="#"><span> ĐIỂM ĐẾN <b> YÊU THÍCH</b></span></a>
+          </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mg-bot20">
+              <div class="pos-relative">
+                <a href="#" class="hvr-bounce-to-bottom">
+                  <img src="images/danang.jpg" alt="dd1" class="img-responsive dd-img">
+                  <div class="frame-diemden">
+                    <div class="diemden-ten">Vịnh Hạ Long</div>
+                    <div class="diemden-like">Đã có <span class="num-like">1,600<sup class="k">+</sup></span> lượt khách
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mg-bot20">
+              <div class="pos-relative">
+                <a href="#" class="hvr-bounce-to-bottom">
+                  <img src="images/danang.jpg" alt="dd1" class="img-responsive dd-img">
+                  <div class="frame-diemden">
+                    <div class="diemden-ten">Sapa</div>
+                    <div class="diemden-like">Đã có <span class="num-like">1,600<sup class="k">+</sup></span> lượt khách
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mg-bot20">
+              <div class="pos-relative">
+                <a href="#" class="hvr-bounce-to-bottom">
+                  <img src="images/danang.jpg" alt="dd1" class="img-responsive dd-img">
+                  <div class="frame-diemden">
+                    <div class="diemden-ten">Đà Nẵng</div>
+                    <div class="diemden-like">Đã có <span class="num-like">1,600<sup class="k">+</sup></span> lượt khách
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mg-bot20">
+              <div class="pos-relative">
+                <a href="#" class="hvr-bounce-to-bottom">
+                  <img src="images/danang.jpg" alt="dd1" class="img-responsive dd-img">
+                  <div class="frame-diemden">
+                    <div class="diemden-ten">Qui Nhơn</div>
+                    <div class="diemden-like">Đã có <span class="num-like">1,600<sup class="k">+</sup></span> lượt khách
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div style="border-top: 1px dashed #ccc; padding-bottom: 15px; padding-top: 0px;"></div>
+            </div>
+
+            <div class="col-lg-3 col-sm-4 col-xs-12 mg-bot20">
+              <a href="#" title="Châu Âu" class="hvr-sweep-to-right">
+                <div class="pos-relative">
+                  <img src="images/cambodia.jpg" alt="Châu Âu" class="img-responsive qg-img">
+                  <div class="frame-quocgia">
+                    <div class="quocgia-ten">Châu Âu</div>
+                    <div>
+                      <div class="quocgia-khampha mauchudao f-left">Khám phá ngay</div>
+                      <div class="f-left">
+                        <img src="images/arrow.png" alt="arrow" class="img-responsive"></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-sm-4 col-xs-12 mg-bot20">
+              <a href="#" title="Châu Âu" class="hvr-sweep-to-right">
+                <div class="pos-relative">
+                  <img src="images/cambodia.jpg" alt="Châu Âu" class="img-responsive qg-img">
+                  <div class="frame-quocgia">
+                    <div class="quocgia-ten">Châu Âu</div>
+                    <div>
+                      <div class="quocgia-khampha mauchudao f-left">Khám phá ngay</div>
+                      <div class="f-left">
+                        <img src="images/arrow.png" alt="arrow" class="img-responsive"></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-sm-4 col-xs-12 mg-bot20">
+              <a href="#" title="Châu Âu" class="hvr-sweep-to-right">
+                <div class="pos-relative">
+                  <img src="images/cambodia.jpg" alt="Châu Âu" class="img-responsive qg-img">
+                  <div class="frame-quocgia">
+                    <div class="quocgia-ten">Châu Âu</div>
+                    <div>
+                      <div class="quocgia-khampha mauchudao f-left">Khám phá ngay</div>
+                      <div class="f-left">
+                        <img src="images/arrow.png" alt="arrow" class="img-responsive"></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-sm-4 col-xs-12 mg-bot20">
+              <a href="#" title="Châu Âu" class="hvr-sweep-to-right">
+                <div class="pos-relative">
+                  <img src="images/danang.jpg" alt="Châu Âu" class="img-responsive qg-img">
+                  <div class="frame-quocgia">
+                    <div class="quocgia-ten">Châu Âu</div>
+                    <div>
+                      <div class="quocgia-khampha mauchudao f-left">Khám phá ngay</div>
+                      <div class="f-left">
+                        <img src="images/arrow.png" alt="arrow" class="img-responsive"></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h2 class="title">
+            <a href="#"><span>ẨM THỰC <b> ĐỊA DANH</b></span></a>
+          </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="#" class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/cua.jpeg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Bê thui Cầu Mống</a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/#" class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/amthuc.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">Huế - La Vang - Động Phong Nha &amp; Th ...</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mg-bot20">
+              <a href="/#" class="hvr-bounce-to-bottom"
+                title="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)">
+                <img src="images/ngeo.jpg"
+                  alt="Huế - La Vang - Động Phong Nha &amp; Thiên Đường - Bà Nà - Hội An - Đà Nẵng  (Khách sạn 4*&amp;5* trọn tour. Tour Tiêu Chuẩn)"
+                  class="img-responsive tgs-img"></a>
+              <div class="frame-tour">
+                <div class="div-title">
+                  <h3 class="dot-dot home-cattentour">
+                    <a class="mauchudao" href="#">ỐC Hút</a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </di>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h2 class="title">
+            <a href="#"><span> <b>Dịch vụ </b></span></a>
+          </h2>
+          <div class="row">
+
+            <div class="box-history col-xs-12 col-sm-6 col-md-6">
+              <div class="tlrp-thumb tl-thumboverlay">
+                <a href="#" title="Đặt Phòng, Combo du lịch ">
+                  <img src="images/maybay.jpg" class="img-responsive center-block" alt="Đặt Phòng, Combo du lịch"
+                    title="Đặt Phòng, Combo du lịch ">
+                </a>
+              </div>
+              <h3 class="title-post">
+                <a href="#" title="Fushion Suite ">
+                  Đặt Phòng, Combo du lịch </a>
+              </h3>
+            </div>
+
+            <div class="box-history col-xs-12 col-sm-6 col-md-6">
+              <div class="tlrp-thumb tl-thumboverlay">
+                <a href="#" title="Đặt chỗ vé máy bay giá rẻ">
+                  <img src="images/maybay.jpg" class="img-responsive center-block" alt="Đặt chỗ vé máy bay giá rẻ"
+                    title="Đặt chỗ vé máy bay giá rẻ">
+                </a>
+              </div>
+              <h3 class="title-post">
+                <a href="#" title="Fushion Suite ">
+                  Đặt chỗ vé máy bay giá rẻ </a>
+              </h3>
+            </div>
+
+            <div class="box-history col-xs-12 col-sm-6 col-md-6">
+              <div class="tlrp-thumb tl-thumboverlay">
+                <a href="#" title="Dịch Vụ Thuê Xe">
+                  <img src="images/maybay.jpg" class="img-responsive center-block" alt="Dịch Vụ Thuê Xe"
+                    title="Dịch Vụ Thuê Xe ">
+                </a>
+              </div>
+              <h3 class="title-post">
+                <a href="#" title="Dịch Vụ Thuê Xe "> Dịch Vụ Thuê Xe </a>
+              </h3>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h2 class="title">
+            <a href="#"><span> KIẾN THỨC <b>KINH NGHIỆM </b></span></a>
+          </h2>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="home_kinhnghiem_name">
+                <a href="#">
+                  #Combo Sapa ưu đãi siêu khủng mùa hè 2019 Giá 590k
+                </a>
+              </div>
+              <div class="home_kinhnghiem_img">
+                <a href="#">
+                  <img src="http://yourvacation.vn/images/1155327049669904802461.jpg"
+                    alt="#Combo Sapa ưu đãi siêu khủng mùa hè 2019 Giá 590k"></a>
+              </div>
+              <p>
+                Combo_Sapa giá cực rẻ, Duy_nhất Áp dụng cho khách Việt Nam mùa hè 2019 - Thỏa thích khám phá Sapa mà
+                không cần lo tài chính chỉ với 590.000vnđ/ Khách, Đăng ký ngay tại Your_Vacation_Travel Hà Nội
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="home_kinhnghiem_name">
+                <a href="#">
+                  ​NÊN ĐI HẠ LONG, NINH BÌNH HAY SAPA?
+                </a>
+              </div>
+              <div class="home_kinhnghiem_img">
+                <a href="#">
+                  <img src="http://yourvacation.vn/images/1155241263965314802461.jpg"
+                    alt="#NÊN ĐI HẠ LONG, NINH BÌNH HAY SAPA?"></a>
+              </div>
+              <p>
+                Your Vacation Travel là đơn vị tổ chức các tour ghép Miền Bắc hàng ngày sẽ đưa ra tư vấn 3 điểm du lịch
+                không thể bỏ qua khi đến với Miền Bắc này nhé! Nếu như bạn đang băn khoăn không biết nên chọn Sa Pa, Hạ
+                Long hay Ninh Bình là một trong...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="hidden-print">
+    <div id="social" class="follow-scroll-social hidden-xs"><a class="dmca-badge" href="#" title="">
+      </a>
+      <div class="social-top"><a class="dmca-badge" href="#" title="DANASEA">
+        </a><a href="#" rel="nofollow" target="_blank" title="Fcebook">
+          <div class="facebook icon">
+            <i class="fa fa-facebook"></i>
+          </div>
+        </a>
+        <a href="#" rel="nofollow" target="_blank" title="Facebook messenger">
+          <div class="messenger icon">
+            <i class="fa fa-facebook"></i>
+          </div>
+        </a>
+        <a href="#" rel="nofollow" target="_blank" title="Google+">
+          <div class="google icon">
+            <i class="fa fa-google-plus"></i>
+          </div>
+        </a>
+        <a href="#" rel="nofollow" target="_blank" title="twitter">
+          <div class="twister icon">
+            <i class="fa fa-twitter"></i>
+          </div>
+        </a>
+        <a href="#" rel="nofollow" target="_blank" title="Youtube">
+          <div class="youtube icon">
+            <i class="fa fa-youtube-play"></i>
+          </div>
+        </a>
+        <a href="#" rel="nofollow" target="_blank" title="Hướng dẫn">
+          <div class="guide icon">
+            <i class="fa fa-book"></i>
+          </div>
+        </a>
+      </div>
+      <div class="social-bot show1">
+      </div>
+      <!-- /social -->
+    </div>
+
+    <div class="footer-top hidden-xs">
+      <div class="footer-categories">
+        <a href="#" title="">TOUR NỔI BẬT</a>
+        <a href="#" title="">ĐIỂM ĐẾN YÊU THÍCH</a>
+        <a href="#" title="">ẨM THỰC ĐỊA DANH</a>
+        <a href="#" title="">107 Tour trong nước</a>
+        <a href="#" title="">127 Tour nước ngoài</a>
+      </div>
+      <div class="container-custom hidden-xs">
+        <div class="row">
+          <div class="col-xs-15 footer-top-item">
+            <h3>Dịch vụ</h3>
+            <ul class="list-unstyled">
+
+              <li><a href="#">Tour khách đoàn</a></li>
+              <li><a href="#">Teambuilding</a></li>
+              <li><a href="#" target="_blank">Tổ chức sự kiện</a></li>
+              <li><a href="#" target="_blank">Đại lý vé máy bay</a></li>
+              <li><a href="#" target="_blank">Cho thuê xe du lịch</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-15 footer-top-item">
+            <h3>HƯỚNG DẪN</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Quy định chung</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Hướng dẫn thanh toán</a></li>
+              <li><a href="#">Hướng dẫn đặt tour</a></li>
+              <li><a href="#">Huỷ và đổi vé</a></li>
+              <li><a href="#">Quà tặng du lịch</a></li>
+
+            </ul>
+          </div>
+          <div class="col-xs-15 footer-top-item">
+            <h3>THÔNG TIN</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Góc truyền thông</a></li>
+              <li><a href="#">Khuyến mãi</a></li>
+
+              <li><a href="#">Cẩm nang du lịch</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
+              <li><a href="#">Khách hàng tiêu biểu</a></li>
+              <li><a href="#" target="_blank">Hồ sơ năng lực</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-15 footer-top-item">
+            <h3>KIẾN THỨC KINH NGHIỆM</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Góc truyền thông</a></li>
+              <li><a href="#">Khuyến mãi</a></li>
+
+              <li><a href="#">Cẩm nang du lịch</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
+              <li><a href="#">Khách hàng tiêu biểu</a></li>
+              <li><a href="#" target="_blank">Hồ sơ năng lực</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <a href="" title="MẠNG ĐẶT TOUR DU LỊCH ĐÀ NẴNG ONLINE">
+              <img src="images/logo.png" class="img-responsive" alt="MẠNG ĐẶT TOUR DU LỊCH ĐÀ NẴNG ONLINE"
+                title="MẠNG ĐẶT TOUR DU LỊCH ĐÀ NẴNG ONLINE">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <div itemtype="#" itemscope="">
+              <h1 class="home">
+                <span class="site-title" itemprop="name"> MẠNG ĐẶT TOUR DU LỊCH ĐÀ NẴNG ONLINE</span>
+              </h1>
+              <div class="title-home" itemprop="name">CÔNG TY TNHH DU LỊCH KỲ NGHỉ CỦA BẠN</div>
+              <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+                <span itemprop="streetAddress">51 Phố Hàng Đồng, Hoàn Kiếm</span> - <span itemprop="addressLocality"> 51
+                  Phố Hàng Đồng, Hoàn Kiếm, Hà Nội </span> - <span itemprop="addressRegion">Việt Nam </span>
+              </div>
+              <span itemprop="telephone"> Hotline: 0243.829.1333 - WhatsApp/Zalo +84.947.36.95.97</span>
+              <br>
+              E-mail:
+              <span itemprop="email"> dulichkynghicuaban@gmail.com - Tourghepdulich@gmail.com</span>
+              <meta itemprop="image" content="images/logo.png">
+              <span itemprop="name">
+                <link itemprop="sameAs" href="#">
+              </span>
+            </div>
+            <!-- <p>Copyright © 2018 by YOURVACATION.VN . All Rights Reserved Desgin by hh</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbot">
+      <div class="wrap">
+        <div class="copyright">Copyright © 2018 by YOURVACATION.VN . All Rights Reserved Desgin by hh</div>
+        <ul>
+          <li class="first-child">
+            <a href="https://twitter.com/">
+              <img src="images/f.png" alt="TWITTER">
+            </a>
+          </li>
+          <li><a href="https://twitter.com/">
+              <img src="images/t.png" alt="TWITTER">
+            </a></li>
+          <li>
+            <a href="#">
+              <img src="images/g.png" alt="GOOGLE"></a>
+          </li>
+          <li><a href="#">
+              <img src="images/y.png" alt="YOUTUBE"></a>
+          </li>
+          <li class="last-child"><a href="tourghepvn84">
+              <img src="images/i.png" alt="INSTAGRAM">
+            </a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+<script>
+  displayisnoe = (id) => {
+    // document.getElementById('displayisblock').style.display='block';
+    if( document.getElementById(id).style.display ==='none'){
+      document.getElementById(id).style.display ='block';
+    }else{
+      document.getElementById(id).style.display ='none';
+    }
+ }
+
+ toglemenu  = () => {
+   if(document.getElementById('menu-responsive').style.display ==='block'){
+    document.getElementById('menu-responsive').style.display ='none';
+   }
+   else{
+      document.getElementById('menu-responsive').style.display ='block';
+    }
+ }
+ toglemenu2  = () => {
+   if(document.getElementById('menu-responsive').style.display ==='none'){
+    document.getElementById('menu-responsive').style.display ='block';
+   }
+   else{
+      document.getElementById('menu-responsive').style.display ='none';
+    }
+ }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
